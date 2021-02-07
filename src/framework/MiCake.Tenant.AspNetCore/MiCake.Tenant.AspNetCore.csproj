@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <IsAspNetCore>true</IsAspNetCore>
+    <Description>An open source multi tenancy library for asp net core. Provides Database, Schema, and Table solutions.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\MiCake.Tenant\MiCake.Tenant\MiCake.Tenant.csproj" />
+  </ItemGroup>
+
+</Project>
