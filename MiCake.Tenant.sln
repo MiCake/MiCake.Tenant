@@ -22,7 +22,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{AADB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiCake.Tenant.Tests", "src\tests\MiCake.Tenant.Tests\MiCake.Tenant.Tests\MiCake.Tenant.Tests.csproj", "{53B66AA9-5B6F-4846-BC3B-96467EF32876}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiCake.Tenant.AspNetCore", "src\framework\MiCake.Tenant.AspNetCore\MiCake.Tenant.AspNetCore.csproj", "{01DD3E0D-DD59-42EC-B5AC-8C917EC7D585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiCake.Tenant.AspNetCore", "src\framework\MiCake.Tenant.AspNetCore\MiCake.Tenant.AspNetCore.csproj", "{01DD3E0D-DD59-42EC-B5AC-8C917EC7D585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseHttpHeaderParserApp", "src\samples\UseHttpHeaderParserApp\UseHttpHeaderParserApp.csproj", "{0646D4AC-BE42-48DD-9EA6-D9741B32D3E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiCake.Tenant.Redis", "src\framework\MiCake.Tenant.Redis\MiCake.Tenant.Redis.csproj", "{B76958C3-74FF-42FD-BB33-AF1358BB91B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,14 @@ Global
 		{01DD3E0D-DD59-42EC-B5AC-8C917EC7D585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01DD3E0D-DD59-42EC-B5AC-8C917EC7D585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01DD3E0D-DD59-42EC-B5AC-8C917EC7D585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0646D4AC-BE42-48DD-9EA6-D9741B32D3E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0646D4AC-BE42-48DD-9EA6-D9741B32D3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0646D4AC-BE42-48DD-9EA6-D9741B32D3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0646D4AC-BE42-48DD-9EA6-D9741B32D3E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76958C3-74FF-42FD-BB33-AF1358BB91B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76958C3-74FF-42FD-BB33-AF1358BB91B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76958C3-74FF-42FD-BB33-AF1358BB91B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76958C3-74FF-42FD-BB33-AF1358BB91B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +62,8 @@ Global
 		{4C6D7F50-5428-43E4-A29A-5D8374A99121} = {EBA5FE5E-223C-408C-BE0F-4218519431F5}
 		{53B66AA9-5B6F-4846-BC3B-96467EF32876} = {1AF221F8-42C5-42AF-8D52-6CF91BAC5187}
 		{01DD3E0D-DD59-42EC-B5AC-8C917EC7D585} = {EBA5FE5E-223C-408C-BE0F-4218519431F5}
+		{0646D4AC-BE42-48DD-9EA6-D9741B32D3E4} = {AADB4566-FBF4-4585-AE5F-45EAE723B54C}
+		{B76958C3-74FF-42FD-BB33-AF1358BB91B3} = {EBA5FE5E-223C-408C-BE0F-4218519431F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {01EA37A9-78C5-4898-A7F5-67313252D274}

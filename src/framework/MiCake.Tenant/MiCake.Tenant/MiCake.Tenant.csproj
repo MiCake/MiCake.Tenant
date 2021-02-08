@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
     <Description>An open source multi tenancy library for .NET. Provides Database, Schema, and Table solutions.</Description>
   </PropertyGroup>
 

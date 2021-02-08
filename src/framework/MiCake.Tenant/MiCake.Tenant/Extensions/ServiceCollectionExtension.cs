@@ -1,7 +1,6 @@
 ﻿using MiCake.Tenant.Abstractions;
 using MiCake.Tenant.Internal;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
 
 namespace MiCake.Tenant
@@ -16,8 +15,8 @@ namespace MiCake.Tenant
         /// <returns></returns>
         public static IServiceCollection AddMultiTenantCore(this IServiceCollection services, Action<MultiTenantOptions> options)
         {
-            services.TryAddSingleton<ITenantContextAccessor, TenantContextAccessor>();
-            services.TryAddSingleton<ITenantIdentityHandler, TenantIdentityHandler>();
+            services.AddSingleton<ITenantContextAccessor, TenantContextAccessor>();
+            services.AddSingleton<ITenantIdentityHandler, TenantIdentityHandler>();
             services.Configure(options);
 
             return services;

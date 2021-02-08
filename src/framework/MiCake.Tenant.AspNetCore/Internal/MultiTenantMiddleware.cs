@@ -17,8 +17,10 @@ namespace MiCake.Tenant.AspNetCore.Internal
         public async Task Invoke(HttpContext context)
         {
             var multiTenantService = context.RequestServices.GetRequiredService<IMultiTenantService>();
-
-            await multiTenantService.Run(context, context.RequestAborted);
+            var accessor = context.RequestServices.GetRequiredService<ITenantContextAccessor>();
+            
+            // run multi tenant service,and given tenantcontext to accessor.
+            accessor.TenantContext = await multiTenantService.Run(context, context.RequestAborted);
 
             if (next != null)
             {

@@ -2,11 +2,11 @@
 
 namespace MiCake.Tenant.Modules
 {
-    public class TenantMiCakeModule : MiCakeModule
+    public class MiCakeMultiTenantModule : MiCakeModule
     {
         public override bool IsFrameworkLevel => true;
 
-        public TenantMiCakeModule()
+        public MiCakeMultiTenantModule()
         {
         }
     }

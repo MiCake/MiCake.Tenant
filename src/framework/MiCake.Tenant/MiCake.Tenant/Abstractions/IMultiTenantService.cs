@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 
 namespace MiCake.Tenant.Abstractions
 {
+#nullable enable
     /// <summary>
     /// A service for support multi-tenant.
     /// </summary>
@@ -16,6 +17,6 @@ namespace MiCake.Tenant.Abstractions
         /// </para>
         /// </summary>
         /// <returns></returns>
-        Task Run(object context, CancellationToken cancellationToken = default);
+        Task<TenantContext?> Run(object context, CancellationToken cancellationToken = default);
     }
 }

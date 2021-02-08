@@ -8,7 +8,7 @@
     {
         /// <summary>
         /// Gets or sets the current <see cref="TenantContext"/>
-        ///  Returns null if there is no active.
+        /// Returns null if there is no active.
         /// </summary>
         TenantContext? TenantContext { get; set; }
     }
